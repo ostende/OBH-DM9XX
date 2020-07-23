@@ -296,15 +296,14 @@ class AVSwitch:
 		f.write(cfgelement.value)
 		f.close()
 
-	def setWss(self, cfgelement):
-		if not cfgelement.value:
-			wss = "auto(4:3_off)"
-		else:
-			wss = "auto"
-		print "[VideoHardware] setting wss: %s" % wss
-		f = open("/proc/stb/denc/0/wss", "w")
-		f.write(wss)
-		f.close()
+#	def setWss(self, cfgelement):
+#			wss = "auto(4:3_off)"
+#		else:
+#			wss = "auto"
+#		print "[VideoHardware] setting wss: %s" % wss
+#		f = open("/proc/stb/denc/0/wss", "w")
+#		f.write(wss)
+#		f.close()
 
 	def setPolicy43(self, cfgelement):
 		print "[VideoHardware] setting policy: %s" % cfgelement.value
@@ -933,3 +932,4 @@ def stopHotplug():
 
 def InitiVideomodeHotplug(**kwargs):
 	startHotplug()
+
