@@ -22,12 +22,12 @@ class DeliteGreenPanel(Screen):
 		<widget source="list" render="Listbox" position="80,105" zPosition="1" size="840,500" scrollbarMode="showOnDemand"  transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (125, 0), size = (650, 24), font=0, text = 0),
+				MultiContentEntryText(pos = (125, 0), size = (650, 24), font=0, text = 0, color=0xffa500),
 				MultiContentEntryText(pos = (125, 24), size = (650, 24), font=1, text = 1),
 				MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (100, 40), png = 2),
 				],
-				"fonts": [gFont("Regular", 24),gFont("Regular", 20)],
-				"itemHeight": 50
+				"fonts": [gFont("Regular", 26),gFont("Regular", 20)],
+				"itemHeight": 52
 				}
 			</convert>
 		</widget>
@@ -115,7 +115,7 @@ class DeliteSetupFp(Screen):
 
 	def __init__(self, session):
 		Screen.__init__(self, session)
-		
+
 		self["key_red"] = Label(_("Set Favourite"))
 		self.list = []
 		self["list"] = List(self.list)
