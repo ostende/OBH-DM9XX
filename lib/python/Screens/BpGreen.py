@@ -212,3 +212,4 @@ class DeliteScript(Screen):
 			mysel2 = "/usr/script/" + mysel + ".sh"
 			mytitle = _("Black Hole E2 Script: ") + mysel
 			self.session.open(Console, title=mytitle, cmdlist=[mysel2])
+

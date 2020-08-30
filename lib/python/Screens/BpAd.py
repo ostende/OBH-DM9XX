@@ -983,3 +983,4 @@ class Nab_ConnectPop(Screen):
 
 	def delTimer(self):
 		del self.activityTimer
+
